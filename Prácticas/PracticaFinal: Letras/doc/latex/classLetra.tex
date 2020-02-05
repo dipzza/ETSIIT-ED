@@ -1,0 +1,167 @@
+\hypertarget{classLetra}{}\section{Letra Class Reference}
+\label{classLetra}\index{Letra@{Letra}}
+
+
+T.\+D.\+A. \mbox{\hyperlink{classLetra}{Letra}}.  
+
+
+
+
+{\ttfamily \#include $<$letra.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classLetra_a454348d5e8b5c9f8d8139f16b1ba6ee8}{Letra}} (char caracter2, int cantidad2, int puntuacion2)
+\begin{DoxyCompactList}\small\item\em Constructor con todos los parámetros para inicializar la letra. \end{DoxyCompactList}\item 
+char \mbox{\hyperlink{classLetra_a79514bd663bd54773bcb51f44df763df}{get\+Caracter}} ()
+\begin{DoxyCompactList}\small\item\em Acceso a un atributo. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classLetra_a2028cf9ec2079e55aa5aedb1fb2dc546}{get\+Cantidad}} ()
+\begin{DoxyCompactList}\small\item\em Acceso a un atributo. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classLetra_a6704e1b0e839f5c57b12f1f72148090b}{get\+Puntuacion}} ()
+\begin{DoxyCompactList}\small\item\em Acceso a un atributo. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classLetra_adcc529a3890dc3ee7bfef9ca1fb4124f}{operator$<$}} (const \mbox{\hyperlink{classLetra}{Letra}} \&comp) const
+\begin{DoxyCompactList}\small\item\em Operador para comparar si una letra es menor que otra. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+istream \& \mbox{\hyperlink{classLetra_a2cfa9253e58d293cbbeeb108640809d8}{operator$>$$>$}} (istream \&is, \mbox{\hyperlink{classLetra}{Letra}} \&D)
+\begin{DoxyCompactList}\small\item\em Escritura de la \mbox{\hyperlink{classLetra}{Letra}}. \end{DoxyCompactList}\item 
+ostream \& \mbox{\hyperlink{classLetra_a09586a0209ffbd18eb8c0064ab38f314}{operator$<$$<$}} (ostream \&os, const \mbox{\hyperlink{classLetra}{Letra}} \&D)
+\begin{DoxyCompactList}\small\item\em Lectura de la \mbox{\hyperlink{classLetra}{Letra}}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+T.\+D.\+A. \mbox{\hyperlink{classLetra}{Letra}}. 
+
+Una instancia del tipo de datos abstracto {\ttfamily \mbox{\hyperlink{classLetra}{Letra}}} es un objeto formado por un char y dos int
+
+\begin{DoxyDate}{Date}
+Enero 2018 
+\end{DoxyDate}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classLetra_a454348d5e8b5c9f8d8139f16b1ba6ee8}\label{classLetra_a454348d5e8b5c9f8d8139f16b1ba6ee8}} 
+\index{Letra@{Letra}!Letra@{Letra}}
+\index{Letra@{Letra}!Letra@{Letra}}
+\subsubsection{\texorpdfstring{Letra()}{Letra()}}
+{\footnotesize\ttfamily Letra\+::\+Letra (\begin{DoxyParamCaption}\item[{char}]{caracter2,  }\item[{int}]{cantidad2,  }\item[{int}]{puntuacion2 }\end{DoxyParamCaption})}
+
+
+
+Constructor con todos los parámetros para inicializar la letra. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em caracter2} & letra asociada al objeto \\
+\hline
+{\em cantidad2} & repeticiones de esta \mbox{\hyperlink{classLetra}{Letra}} \\
+\hline
+{\em puntuacion2} & puntuacion de esta \mbox{\hyperlink{classLetra}{Letra}} \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classLetra_a2028cf9ec2079e55aa5aedb1fb2dc546}\label{classLetra_a2028cf9ec2079e55aa5aedb1fb2dc546}} 
+\index{Letra@{Letra}!getCantidad@{getCantidad}}
+\index{getCantidad@{getCantidad}!Letra@{Letra}}
+\subsubsection{\texorpdfstring{getCantidad()}{getCantidad()}}
+{\footnotesize\ttfamily int Letra\+::get\+Cantidad (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Acceso a un atributo. 
+
+\begin{DoxyReturn}{Returns}
+el atributo cantidad 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classLetra_a79514bd663bd54773bcb51f44df763df}\label{classLetra_a79514bd663bd54773bcb51f44df763df}} 
+\index{Letra@{Letra}!getCaracter@{getCaracter}}
+\index{getCaracter@{getCaracter}!Letra@{Letra}}
+\subsubsection{\texorpdfstring{getCaracter()}{getCaracter()}}
+{\footnotesize\ttfamily char Letra\+::get\+Caracter (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Acceso a un atributo. 
+
+\begin{DoxyReturn}{Returns}
+el atributo caracter 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classLetra_a6704e1b0e839f5c57b12f1f72148090b}\label{classLetra_a6704e1b0e839f5c57b12f1f72148090b}} 
+\index{Letra@{Letra}!getPuntuacion@{getPuntuacion}}
+\index{getPuntuacion@{getPuntuacion}!Letra@{Letra}}
+\subsubsection{\texorpdfstring{getPuntuacion()}{getPuntuacion()}}
+{\footnotesize\ttfamily int Letra\+::get\+Puntuacion (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Acceso a un atributo. 
+
+\begin{DoxyReturn}{Returns}
+el atributo puntuacion 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classLetra_adcc529a3890dc3ee7bfef9ca1fb4124f}\label{classLetra_adcc529a3890dc3ee7bfef9ca1fb4124f}} 
+\index{Letra@{Letra}!operator$<$@{operator$<$}}
+\index{operator$<$@{operator$<$}!Letra@{Letra}}
+\subsubsection{\texorpdfstring{operator$<$()}{operator<()}}
+{\footnotesize\ttfamily bool Letra\+::operator$<$ (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classLetra}{Letra}} \&}]{comp }\end{DoxyParamCaption}) const}
+
+
+
+Operador para comparar si una letra es menor que otra. 
+
+\begin{DoxyReturn}{Returns}
+bool que es true si la letra $\ast$this es menor que comp 
+\end{DoxyReturn}
+
+
+\subsection{Friends And Related Function Documentation}
+\mbox{\Hypertarget{classLetra_a09586a0209ffbd18eb8c0064ab38f314}\label{classLetra_a09586a0209ffbd18eb8c0064ab38f314}} 
+\index{Letra@{Letra}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!Letra@{Letra}}
+\subsubsection{\texorpdfstring{operator$<$$<$}{operator<<}}
+{\footnotesize\ttfamily ostream\& operator$<$$<$ (\begin{DoxyParamCaption}\item[{ostream \&}]{os,  }\item[{const \mbox{\hyperlink{classLetra}{Letra}} \&}]{D }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+
+Lectura de la \mbox{\hyperlink{classLetra}{Letra}}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em is} & flujo de entrada \\
+\hline
+{\em D} & \mbox{\hyperlink{classLetra}{Letra}}. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+el flujo de entrada 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classLetra_a2cfa9253e58d293cbbeeb108640809d8}\label{classLetra_a2cfa9253e58d293cbbeeb108640809d8}} 
+\index{Letra@{Letra}!operator$>$$>$@{operator$>$$>$}}
+\index{operator$>$$>$@{operator$>$$>$}!Letra@{Letra}}
+\subsubsection{\texorpdfstring{operator$>$$>$}{operator>>}}
+{\footnotesize\ttfamily istream\& operator$>$$>$ (\begin{DoxyParamCaption}\item[{istream \&}]{is,  }\item[{\mbox{\hyperlink{classLetra}{Letra}} \&}]{D }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+
+Escritura de la \mbox{\hyperlink{classLetra}{Letra}}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em is} & flujo de salida \\
+\hline
+{\em D} & \mbox{\hyperlink{classLetra}{Letra}}. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+el flujo de salida 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/\mbox{\hyperlink{letra_8h}{letra.\+h}}\item 
+src/\mbox{\hyperlink{letra_8cpp}{letra.\+cpp}}\end{DoxyCompactItemize}

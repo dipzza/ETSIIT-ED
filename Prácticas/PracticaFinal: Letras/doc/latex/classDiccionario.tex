@@ -1,0 +1,149 @@
+\hypertarget{classDiccionario}{}\section{Diccionario Class Reference}
+\label{classDiccionario}\index{Diccionario@{Diccionario}}
+
+
+T.\+D.\+A. \mbox{\hyperlink{classDiccionario}{Diccionario}}.  
+
+
+
+
+{\ttfamily \#include $<$diccionario.\+h$>$}
+
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classDiccionario_1_1iterator}{iterator}}
+\begin{DoxyCompactList}\small\item\em clase para iterar sobre el \mbox{\hyperlink{classDiccionario}{Diccionario}} \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{classDiccionario_a74ea14ecba52288b84ffc6ea1f2fba99}{size}} () const
+\begin{DoxyCompactList}\small\item\em Calcula la cantidad de palabras del diccionario. \end{DoxyCompactList}\item 
+vector$<$ string $>$ \mbox{\hyperlink{classDiccionario_a11bd184b32340347d6757925fafdfc14}{palabras\+Longitud}} (int longitud)
+\begin{DoxyCompactList}\small\item\em Obtiene las palabras de un determinado tamaño. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classDiccionario_a15c42990a5b7d00bc9522ab5e4847bcb}{esta}} (string palabra)
+\begin{DoxyCompactList}\small\item\em Comprueba si una palabra está en el diccionario. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classDiccionario_a3f42d480e74efbd66b8837d0ea1e491d}\label{classDiccionario_a3f42d480e74efbd66b8837d0ea1e491d}} 
+\mbox{\hyperlink{classDiccionario_1_1iterator}{iterator}} \mbox{\hyperlink{classDiccionario_a3f42d480e74efbd66b8837d0ea1e491d}{begin}} ()
+\begin{DoxyCompactList}\small\item\em Inicializa un iterator al comienzo del diccionario. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classDiccionario_abe91cc666c92f7f003507a82bdcd8c35}\label{classDiccionario_abe91cc666c92f7f003507a82bdcd8c35}} 
+\mbox{\hyperlink{classDiccionario_1_1iterator}{iterator}} \mbox{\hyperlink{classDiccionario_abe91cc666c92f7f003507a82bdcd8c35}{end}} ()
+\begin{DoxyCompactList}\small\item\em Inicializa un iterator al final del diccionario. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+istream \& \mbox{\hyperlink{classDiccionario_a940c6d9371bca891c95a5a044a42905f}{operator$>$$>$}} (istream \&is, \mbox{\hyperlink{classDiccionario}{Diccionario}} \&D)
+\begin{DoxyCompactList}\small\item\em Escritura del \mbox{\hyperlink{classDiccionario}{Diccionario}}. \end{DoxyCompactList}\item 
+ostream \& \mbox{\hyperlink{classDiccionario_aad8d25118e38f63c35cfc247af45a78a}{operator$<$$<$}} (ostream \&os, const \mbox{\hyperlink{classDiccionario}{Diccionario}} \&D)
+\begin{DoxyCompactList}\small\item\em Lectura del \mbox{\hyperlink{classDiccionario}{Diccionario}}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+T.\+D.\+A. \mbox{\hyperlink{classDiccionario}{Diccionario}}. 
+
+Una instancia del tipo de datos abstracto {\ttfamily \mbox{\hyperlink{classLetra}{Letra}}} es un objeto compuesto de una lista de palabras únicas ordenadas por orden lexicográfico
+
+\begin{DoxyDate}{Date}
+Enero 2018 
+\end{DoxyDate}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classDiccionario_a15c42990a5b7d00bc9522ab5e4847bcb}\label{classDiccionario_a15c42990a5b7d00bc9522ab5e4847bcb}} 
+\index{Diccionario@{Diccionario}!esta@{esta}}
+\index{esta@{esta}!Diccionario@{Diccionario}}
+\subsubsection{\texorpdfstring{esta()}{esta()}}
+{\footnotesize\ttfamily bool Diccionario\+::esta (\begin{DoxyParamCaption}\item[{string}]{palabra }\end{DoxyParamCaption})}
+
+
+
+Comprueba si una palabra está en el diccionario. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em palabra} & string a buscar en el diccionario \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool que es true si la palabra está 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classDiccionario_a11bd184b32340347d6757925fafdfc14}\label{classDiccionario_a11bd184b32340347d6757925fafdfc14}} 
+\index{Diccionario@{Diccionario}!palabrasLongitud@{palabrasLongitud}}
+\index{palabrasLongitud@{palabrasLongitud}!Diccionario@{Diccionario}}
+\subsubsection{\texorpdfstring{palabrasLongitud()}{palabrasLongitud()}}
+{\footnotesize\ttfamily vector$<$ string $>$ Diccionario\+::palabras\+Longitud (\begin{DoxyParamCaption}\item[{int}]{longitud }\end{DoxyParamCaption})}
+
+
+
+Obtiene las palabras de un determinado tamaño. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em longitud} & longitud de las palabras a devolver \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+vector con todas las palabras con tamaño {\itshape longitud} en el diccionario 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classDiccionario_a74ea14ecba52288b84ffc6ea1f2fba99}\label{classDiccionario_a74ea14ecba52288b84ffc6ea1f2fba99}} 
+\index{Diccionario@{Diccionario}!size@{size}}
+\index{size@{size}!Diccionario@{Diccionario}}
+\subsubsection{\texorpdfstring{size()}{size()}}
+{\footnotesize\ttfamily int Diccionario\+::size (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Calcula la cantidad de palabras del diccionario. 
+
+\begin{DoxyReturn}{Returns}
+tamaño del diccionario 
+\end{DoxyReturn}
+
+
+\subsection{Friends And Related Function Documentation}
+\mbox{\Hypertarget{classDiccionario_aad8d25118e38f63c35cfc247af45a78a}\label{classDiccionario_aad8d25118e38f63c35cfc247af45a78a}} 
+\index{Diccionario@{Diccionario}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!Diccionario@{Diccionario}}
+\subsubsection{\texorpdfstring{operator$<$$<$}{operator<<}}
+{\footnotesize\ttfamily ostream\& operator$<$$<$ (\begin{DoxyParamCaption}\item[{ostream \&}]{os,  }\item[{const \mbox{\hyperlink{classDiccionario}{Diccionario}} \&}]{D }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+
+Lectura del \mbox{\hyperlink{classDiccionario}{Diccionario}}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em is} & flujo de entrada \\
+\hline
+{\em D} & \mbox{\hyperlink{classDiccionario}{Diccionario}} \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+el flujo de entrada 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classDiccionario_a940c6d9371bca891c95a5a044a42905f}\label{classDiccionario_a940c6d9371bca891c95a5a044a42905f}} 
+\index{Diccionario@{Diccionario}!operator$>$$>$@{operator$>$$>$}}
+\index{operator$>$$>$@{operator$>$$>$}!Diccionario@{Diccionario}}
+\subsubsection{\texorpdfstring{operator$>$$>$}{operator>>}}
+{\footnotesize\ttfamily istream\& operator$>$$>$ (\begin{DoxyParamCaption}\item[{istream \&}]{is,  }\item[{\mbox{\hyperlink{classDiccionario}{Diccionario}} \&}]{D }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+
+Escritura del \mbox{\hyperlink{classDiccionario}{Diccionario}}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em is} & flujo de salida \\
+\hline
+{\em D} & \mbox{\hyperlink{classDiccionario}{Diccionario}} \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+el flujo de salida 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/\mbox{\hyperlink{diccionario_8h}{diccionario.\+h}}\item 
+src/\mbox{\hyperlink{diccionario_8cpp}{diccionario.\+cpp}}\end{DoxyCompactItemize}

@@ -1,0 +1,74 @@
+\hypertarget{letras_8cpp}{}\section{src/letras.cpp File Reference}
+\label{letras_8cpp}\index{src/letras.cpp@{src/letras.cpp}}
+
+
+\+: Programa que construye las palabras de longitud (o puntuación) mayor de un diccionario a partir de una serie de letras seleccionadas de forma aleatoria.  
+
+
+{\ttfamily \#include $<$iostream$>$}\newline
+{\ttfamily \#include $<$stdlib.\+h$>$}\newline
+{\ttfamily \#include $<$fstream$>$}\newline
+{\ttfamily \#include $<$string.\+h$>$}\newline
+{\ttfamily \#include $<$utility$>$}\newline
+{\ttfamily \#include $<$unordered\+\_\+map$>$}\newline
+{\ttfamily \#include \char`\"{}diccionario.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}conjunto\+Letras.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}bolsa\+Letras.\+h\char`\"{}}\newline
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{letras_8cpp_a630fa9273afe38b317cf08307d1b4886}{es\+Palabra\+Valida}} (string palabra, string letras\+Validas)
+\begin{DoxyCompactList}\small\item\em Comprueba si una palabra se puede formar con una serie de letras. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{letras_8cpp_ab23822189ef4cdaa1f8376d572f5dd4f}{calcular\+Puntuacion}} (string palabra, const unordered\+\_\+map$<$ char, int $>$ \&puntuaciones)
+\begin{DoxyCompactList}\small\item\em Calcula la puntuacion asociada a una palabra. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{letras_8cpp_a3c04138a5bfe5d72780bb7e82a18e627}\label{letras_8cpp_a3c04138a5bfe5d72780bb7e82a18e627}} 
+int {\bfseries main} (int argc, char $\ast$$\ast$argv)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\+: Programa que construye las palabras de longitud (o puntuación) mayor de un diccionario a partir de una serie de letras seleccionadas de forma aleatoria. 
+
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{letras_8cpp_ab23822189ef4cdaa1f8376d572f5dd4f}\label{letras_8cpp_ab23822189ef4cdaa1f8376d572f5dd4f}} 
+\index{letras.cpp@{letras.cpp}!calcularPuntuacion@{calcularPuntuacion}}
+\index{calcularPuntuacion@{calcularPuntuacion}!letras.cpp@{letras.cpp}}
+\subsubsection{\texorpdfstring{calcularPuntuacion()}{calcularPuntuacion()}}
+{\footnotesize\ttfamily int calcular\+Puntuacion (\begin{DoxyParamCaption}\item[{string}]{palabra,  }\item[{const unordered\+\_\+map$<$ char, int $>$ \&}]{puntuaciones }\end{DoxyParamCaption})}
+
+
+
+Calcula la puntuacion asociada a una palabra. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em palabra} & palabra de la que calcular la puntuacion \\
+\hline
+{\em puntuaciones} & puntuaciones asociadas a cada letra \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+puntuacion asociada a {\itshape palabra} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{letras_8cpp_a630fa9273afe38b317cf08307d1b4886}\label{letras_8cpp_a630fa9273afe38b317cf08307d1b4886}} 
+\index{letras.cpp@{letras.cpp}!esPalabraValida@{esPalabraValida}}
+\index{esPalabraValida@{esPalabraValida}!letras.cpp@{letras.cpp}}
+\subsubsection{\texorpdfstring{esPalabraValida()}{esPalabraValida()}}
+{\footnotesize\ttfamily bool es\+Palabra\+Valida (\begin{DoxyParamCaption}\item[{string}]{palabra,  }\item[{string}]{letras\+Validas }\end{DoxyParamCaption})}
+
+
+
+Comprueba si una palabra se puede formar con una serie de letras. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em palabra} & palabra a comprobar si se puede formar con {\itshape letras\+Validas} \\
+\hline
+{\em letras\+Validas} & conjunto de letras que se pueden usar para formar una palabra valida \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool que es true si {\itshape palabra} se puede formar usando solo las letras en {\itshape letras\+Validas} 
+\end{DoxyReturn}

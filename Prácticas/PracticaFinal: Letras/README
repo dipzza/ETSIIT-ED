@@ -1,0 +1,35 @@
+Autor: Francisco Javier Bolívar Expósito
+
+En la carpeta doc se incluye documentación generada con doxygen.
+
+Algunos apuntes sobre la implementación:
+
+Letra se ha implementado con los atributos caracter, cantidad y puntuación y un operator< necesario para
+poder insertar en conjuntoLetras que es un set de Letras.
+
+El programa cantidad-letras, además de generar el archivo salida.txt con las frecuencias absolutas y relativas de las apariciones de las letras en el diccionario, también actualiza en el fichero de letras.txt la cantidad a introducir en la bolsaLetras y la puntuación asignada a cada letra según las frecuencias relativas calculadas.
+
+La bolsaLetras se implementa usando el fichero de letras generado por cantidad-letras introduciendo cada letra tantas veces como indica su cantidad en un vector de char. Después este vector se reordena aleatoriamente y se puede obtener un subconjunto del vector según las letras que necesitemos.
+
+En el programa letras.cpp las mejores palabras se buscan comprobando si las palabras del diccionario se pueden formar con las letras sacadas de la bolsa de letras.
+
+
+Compilación y pruebas:
+
+El makefile incluye varias reglas para compilar y probar los distintos programas. Los programas funcionan 
+correctamente.
+
+Se pueden hacer las pruebas ejecutando:
+	make PruebaDiccionario (compila el programa testdiccionario y lo ejecuta usando el diccionario 		
+						    diccionario500.txt)
+
+	make PruebaCantidad (compila el programa cantidadLetras y lo ejecuta generando a partir del diccionario 
+						 spanish.txt y el fichero de letras letras_spanish.txt)
+
+	make PruebaL (compila el programa letras y ejecuta el juego en modo longitud con 8 letras generadas,
+				  usando un diccionario español con más de 80.000 palabras y un fichero de letras generado
+				  para este diccionario)
+
+	make PruebaP (compila el programa letras y ejecuta el juego en modo puntuación con 8 letras generadas,
+				  usando un diccionario español con más de 80.000 palabras y un fichero de letras generado
+				  para este diccionario)

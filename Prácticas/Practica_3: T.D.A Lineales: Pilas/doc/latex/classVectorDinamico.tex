@@ -1,0 +1,154 @@
+\hypertarget{classVectorDinamico}{}\section{Vector\+Dinamico$<$ T $>$ Class Template Reference}
+\label{classVectorDinamico}\index{Vector\+Dinamico$<$ T $>$@{Vector\+Dinamico$<$ T $>$}}
+
+
+{\ttfamily \#include $<$V\+D\+G.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classVectorDinamico_ad7a667a3b7d22b69bf886fec3c7c61c9}{Vector\+Dinamico}} (int num\+\_\+elem)
+\item 
+\mbox{\hyperlink{classVectorDinamico_a09b51d45b99d4f08dd20419fd60f9a02}{$\sim$\+Vector\+Dinamico}} ()
+\item 
+int \mbox{\hyperlink{classVectorDinamico_ab4a6076bb874fc2b3a5a810289eab876}{redimensionar}} (int num\+\_\+elem)
+\item 
+int \mbox{\hyperlink{classVectorDinamico_a52e08b5e5c6e74fa739cc95a19993919}{dimension}} () const
+\item 
+T \mbox{\hyperlink{classVectorDinamico_affda976f53b24185bb6078f298408294}{componente}} (int i) const
+\item 
+void \mbox{\hyperlink{classVectorDinamico_aebde72265787a3f6044c3d6d120fc0c4}{asignar\+\_\+componente}} (int i, const T \&elem)
+\item 
+T \& \mbox{\hyperlink{classVectorDinamico_a6c4cab2d396b71939c056fb40ba72951}{operator\mbox{[}$\,$\mbox{]}}} (int i)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$class T$>$\newline
+class Vector\+Dinamico$<$ T $>$}
+
+\mbox{\hyperlink{classVectorDinamico_ad7a667a3b7d22b69bf886fec3c7c61c9}{Vector\+Dinamico\+::\+Vector\+Dinamico}}, $\sim$\+Vector\+Dinamico, redimensionar, dimension, componente, asignar\+\_\+componente, operator\mbox{[}\mbox{]}
+
+Este T\+DA representa vectores de objetos de la clase T cuyo tamaño puede cambiar en tiempo de ejecución. Son mutables. Residen en memoria dinámica.
+
+Requisitos para la instanciación\+:
+
+La clase T debe tener las siguientes operaciones\+:
+\begin{DoxyItemize}
+\item Constructor por defecto
+\item Constructor de copia
+\item Operador de asignación 
+\end{DoxyItemize}
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classVectorDinamico_ad7a667a3b7d22b69bf886fec3c7c61c9}\label{classVectorDinamico_ad7a667a3b7d22b69bf886fec3c7c61c9}} 
+\index{Vector\+Dinamico@{Vector\+Dinamico}!Vector\+Dinamico@{Vector\+Dinamico}}
+\index{Vector\+Dinamico@{Vector\+Dinamico}!Vector\+Dinamico@{Vector\+Dinamico}}
+\subsubsection{\texorpdfstring{Vector\+Dinamico()}{VectorDinamico()}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+\mbox{\hyperlink{classVectorDinamico}{Vector\+Dinamico}}$<$ T $>$\+::\mbox{\hyperlink{classVectorDinamico}{Vector\+Dinamico}} (\begin{DoxyParamCaption}\item[{int}]{num\+\_\+elem }\end{DoxyParamCaption})}
+
+Constructor\+: crea un vector dinámico.
+
+
+\begin{DoxyParams}{Parameters}
+{\em num\+\_\+elem} & Número de componentes del nuevo vector. num\+\_\+elem $>$= 0.\\
+\hline
+\end{DoxyParams}
+Crear un vector dinámico con num\+\_\+elem componentes. \mbox{\Hypertarget{classVectorDinamico_a09b51d45b99d4f08dd20419fd60f9a02}\label{classVectorDinamico_a09b51d45b99d4f08dd20419fd60f9a02}} 
+\index{Vector\+Dinamico@{Vector\+Dinamico}!````~Vector\+Dinamico@{$\sim$\+Vector\+Dinamico}}
+\index{````~Vector\+Dinamico@{$\sim$\+Vector\+Dinamico}!Vector\+Dinamico@{Vector\+Dinamico}}
+\subsubsection{\texorpdfstring{$\sim$\+Vector\+Dinamico()}{~VectorDinamico()}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+\mbox{\hyperlink{classVectorDinamico}{Vector\+Dinamico}}$<$ T $>$\+::$\sim$\mbox{\hyperlink{classVectorDinamico}{Vector\+Dinamico}} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Destructor.
+
+Destruye v liberando los recursos que empleaba. 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classVectorDinamico_aebde72265787a3f6044c3d6d120fc0c4}\label{classVectorDinamico_aebde72265787a3f6044c3d6d120fc0c4}} 
+\index{Vector\+Dinamico@{Vector\+Dinamico}!asignar\+\_\+componente@{asignar\+\_\+componente}}
+\index{asignar\+\_\+componente@{asignar\+\_\+componente}!Vector\+Dinamico@{Vector\+Dinamico}}
+\subsubsection{\texorpdfstring{asignar\+\_\+componente()}{asignar\_componente()}}
+{\footnotesize\ttfamily template$<$class T$>$ \\
+void \mbox{\hyperlink{classVectorDinamico}{Vector\+Dinamico}}$<$ T $>$\+::asignar\+\_\+componente (\begin{DoxyParamCaption}\item[{int}]{i,  }\item[{const T \&}]{elem }\end{DoxyParamCaption})}
+
+Modifica el valor de una componente del vector.
+
+
+\begin{DoxyParams}{Parameters}
+{\em i} & indice de la componente a modificar. 0 $<$= i $<$ \mbox{\hyperlink{classVectorDinamico_a52e08b5e5c6e74fa739cc95a19993919}{dimension()}}. \\
+\hline
+{\em valor} & nuevo valor a asignar a la componente\\
+\hline
+\end{DoxyParams}
+Modifica la componente i-\/ésima de v, que pasa a ser \textquotesingle{}valor\textquotesingle{}. \mbox{\Hypertarget{classVectorDinamico_affda976f53b24185bb6078f298408294}\label{classVectorDinamico_affda976f53b24185bb6078f298408294}} 
+\index{Vector\+Dinamico@{Vector\+Dinamico}!componente@{componente}}
+\index{componente@{componente}!Vector\+Dinamico@{Vector\+Dinamico}}
+\subsubsection{\texorpdfstring{componente()}{componente()}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+T \mbox{\hyperlink{classVectorDinamico}{Vector\+Dinamico}}$<$ T $>$\+::componente (\begin{DoxyParamCaption}\item[{int}]{i }\end{DoxyParamCaption}) const}
+
+Acceso a una componente del vector.
+
+
+\begin{DoxyParams}{Parameters}
+{\em i} & indice de la componente a obtener. 0 $<$= i $<$ \mbox{\hyperlink{classVectorDinamico_a52e08b5e5c6e74fa739cc95a19993919}{dimension()}}.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+componente i-\/ésima del vector receptor. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classVectorDinamico_a52e08b5e5c6e74fa739cc95a19993919}\label{classVectorDinamico_a52e08b5e5c6e74fa739cc95a19993919}} 
+\index{Vector\+Dinamico@{Vector\+Dinamico}!dimension@{dimension}}
+\index{dimension@{dimension}!Vector\+Dinamico@{Vector\+Dinamico}}
+\subsubsection{\texorpdfstring{dimension()}{dimension()}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+int \mbox{\hyperlink{classVectorDinamico}{Vector\+Dinamico}}$<$ T $>$\+::dimension (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Devuelve el número de componentes del receptor.
+
+\begin{DoxyReturn}{Returns}
+número de componentes del receptor. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classVectorDinamico_a6c4cab2d396b71939c056fb40ba72951}\label{classVectorDinamico_a6c4cab2d396b71939c056fb40ba72951}} 
+\index{Vector\+Dinamico@{Vector\+Dinamico}!operator\mbox{[}\mbox{]}@{operator[]}}
+\index{operator\mbox{[}\mbox{]}@{operator[]}!Vector\+Dinamico@{Vector\+Dinamico}}
+\subsubsection{\texorpdfstring{operator[]()}{operator[]()}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+T \& \mbox{\hyperlink{classVectorDinamico}{Vector\+Dinamico}}$<$ T $>$\+::operator\mbox{[}$\,$\mbox{]} (\begin{DoxyParamCaption}\item[{int}]{i }\end{DoxyParamCaption})}
+
+Acceso a una componente del vector, con posibilidad de modificación.
+
+
+\begin{DoxyParams}{Parameters}
+{\em i} & indice de la componente a obtener. 0 $<$= i $<$ \mbox{\hyperlink{classVectorDinamico_a52e08b5e5c6e74fa739cc95a19993919}{dimension()}}.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+referencia a la componente i-\/ésima del vector receptor. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classVectorDinamico_ab4a6076bb874fc2b3a5a810289eab876}\label{classVectorDinamico_ab4a6076bb874fc2b3a5a810289eab876}} 
+\index{Vector\+Dinamico@{Vector\+Dinamico}!redimensionar@{redimensionar}}
+\index{redimensionar@{redimensionar}!Vector\+Dinamico@{Vector\+Dinamico}}
+\subsubsection{\texorpdfstring{redimensionar()}{redimensionar()}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+int \mbox{\hyperlink{classVectorDinamico}{Vector\+Dinamico}}$<$ T $>$\+::redimensionar (\begin{DoxyParamCaption}\item[{int}]{num\+\_\+elem }\end{DoxyParamCaption})}
+
+Modifica el tamaño del receptor.
+
+
+\begin{DoxyParams}{Parameters}
+{\em num\+\_\+elem} & nuevo tamaño del vector. num\+\_\+elem $>$= 0.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+0, si éxito. 1, si se producen errores.
+\end{DoxyReturn}
+Modifica el tamaño del receptor, dejándolo con num\+\_\+elem componentes. a) Si \mbox{\hyperlink{classVectorDinamico_a52e08b5e5c6e74fa739cc95a19993919}{dimension()}} $<$ num\+\_\+elem, los anteriores elementos del receptor se conservan en sus posiciones y las nuevas componentes se inician a 0. b) Si \mbox{\hyperlink{classVectorDinamico_a52e08b5e5c6e74fa739cc95a19993919}{dimension()}} $<$= num\+\_\+elem, las primeras num\+\_\+elem componentes de ve se mantienen en sus posiciones. Si todo el proceso culmina con éxito, devuelve 0. Si se produce algún error, devuelve 1. 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/V\+D\+G.\+h\item 
+src/V\+D\+G.\+cpp\end{DoxyCompactItemize}

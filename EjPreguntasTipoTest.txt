@@ -1,0 +1,19 @@
+1. El TDA cola con prioridad no es más que un caso particular del TDA cola. F, la inserción no es siempre al final
+
+2. El orden en que las hojas se listan en los recorridos pre, in y post es el mismo en los 3 casos. V, siempre se hace hijo izquierda, hijo derecha
+
+3. Un AVL puede reconstruirse de forma unívoca dado su inorden. F
+
+4. Es imposible que un arbol Binario sea AVL y APO a la vez. V, condiciones contrapuestas, ?mismo valor en hijo y padre es degenerado
+
+5. En un esquema de hashing doble nunca puede ocurrir que para 2 claves su funcion hash y hash secundaria no pueden dar el mismo valor. F, casos raros pero puede ocurrir
+
+6. Un analista tiene que resolver un problema de tamaño 100 y para ello utiliza un algoritmo o(n²). Uno de sus colaboradores consigue obtener una solución que es o(n). El analista debe olvidarse de su primera solución y usar la de su colaborador de mejor eficiencia en tiempo. F, para valores constantes de tamaño puede interesar quedarse con algoritmos peores, la notación O grande se usa cuando tiende al infinito. O(n) puede ser 1000n y O(n2) puede ser n2
+   
+7. Si la eficiencia de un algoritmo viene dada por la función f(n) = 1+2+3+4+...+n, ese algoritmo es o(max{1,2,3,4..,n} es decir o(n). F, el algoritmos es on2
+
+8. Puede hacerse esta definición: "stack<int>::iterator p;" F, una pila no tiene iteradores
+
+9. Un APO puede reconstruirse de forma unívoca dado su recorrido en posorden. V
+
+10. En un esquema de hashing doble es correcto como función hash secundaria la función: h0(x) = [(B-1) - (x % B)] % B Siendo B primo. F, puede salir 0
